@@ -98,11 +98,21 @@ p {
 
 /* Navbar */
 #navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-pink);
     padding: 16px;
+    background-color: transparent;
+    transition: var(--animation-duration);
+    z-index: 1;
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-pink);
+    padding: 8px;
 }
 
 .navbar__logo{
@@ -146,6 +156,7 @@ p {
 #home{
     background: url('imgs/background.png') center/cover;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
