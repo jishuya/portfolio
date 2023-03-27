@@ -120,9 +120,12 @@ const navItems = sectionIds.map((id) =>
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];  // data-link="#home"
 function selectNavItem(selected) {
+  console.log('selectedNavItem1: ', selectedNavItem)
+  console.log('navItems[selectedNavIndex]: ', selected)
   selectedNavItem.classList.remove('active');
   selectedNavItem = selected;
   selectedNavItem.classList.add('active');
+  console.log('selectedNavItem2: ', selectedNavItem)
 }
 
 const observerOptions = {
