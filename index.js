@@ -1,4 +1,9 @@
-const today = document.querySelector("#today");
-const tomorrow = document.querySelector("#tomorrow");
+const express  = require('express');
 
-tomorrow.children[1].after(today.children[1]);
+const app = express();
+
+app.get('/', (req, res)=>{
+    res.send('💙Docker TEST page💚')
+});
+
+app.listen(8080, ()=> console.log('server is running💨'))
