@@ -103,7 +103,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: transparent;
+    background-color: var(--color-pink);
     transition: all var(--animation-duration) ease-in-out;
     z-index: 1;
 }
@@ -150,4 +150,33 @@ p {
     font-size: 24px;
     color: var(--color-white);
     display: none;
+}
+
+/* Home */
+#home{
+    background: url('imgs/background.png');
+    padding: 40px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.home__avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home__title, .home__description{
+    color: var(--color-white);
+}
+
+.home__contact{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    padding: 8px 12px;
+    margin: 24px;
+    color: var(--color-white);
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
 }
