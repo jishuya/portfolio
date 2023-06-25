@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cascading</title>
-    <style></style>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px; /* 컨테이너의 높이를 제한 */
+        align-items: center;
+        align-content: space-around;
+        border: 1px solid black;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Cascading을 확인하는 버튼들</h1>
-    <button>태그 버튼</button>
-    <button class="special">클래스 버튼</button>
-    <button class="special">클래스 버튼</button>
-    <button class="special" id="primary">클래스+아이디 버튼</button>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+    </div>
   </body>
 </html>
