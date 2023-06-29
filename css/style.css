@@ -51,9 +51,14 @@ button:focus {
 }
 
 /* Common */
-section {
+.section {
     text-align: center;
     padding: 4rem;
+}
+
+.max-container {
+    max-width: var(--size-max-width);
+    margin: auto;
 }
 
 .title {
@@ -114,7 +119,6 @@ border-radius: 4px;
 }
 
 /* home */
-
 #home{
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -154,4 +158,59 @@ border-radius: 4px;
     outline: 1px solid var(--color-accent);
     background-color: transparent;
     color: var(--color-text);
+}
+
+/* About */
+.majors{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.major{
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+}
+
+.major__icon{
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
+
+.major__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+.major:hover .major__icon {
+transform: rotate(-15deg) scale(1.2);
+}
+
+
+.jobs {
+    text-align: start;
+}
+
+.job{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.job__name {
+    color: var(--color-primary);
+}
+
+.job__period {
+color: var(--color-primary);
+font-size: 0.8rem;
 }
