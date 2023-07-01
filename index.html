@@ -46,12 +46,12 @@
         <!-- Home -->
         <section id="home">
             <img class="home__avatar" src="./imgs/profile_removebg.png" alt="jishu's profile" />
-            <h2 class="home__title">Hello <br>I&#39;m <strong class="home__title--strong">FullStack Developer</strong> Jisoo, who grows every day.</h2>
+            <h2 class="home__title">Hello <br>I&#39;m <strong class="home__title--strong">FullStack Developer</strong> Jisoo<br> who grows every day.</h2>
             <p class="home__description">I want to make a positive impact on the world through IT skills.</p>
             <a class="home__contact"href="#contact">Contact me</a>
         </section>
         <!-- About -->
-        <section id="about" class="section">
+        <section id="about" class="section max-container">
             <h2 class="title">About me</h2>
             <p class="description">내가 할 수 있는 기술력(프론트앤드, 백앤드, DB), 회사, 학원 등에서 내가 한 업적</p>
             <ul class="majors">
@@ -63,7 +63,7 @@
                 <li class="major">
                     <i class="fa-solid fa-server major__icon"></i>
                     <p class="major__title">Back-end</p>
-                    <p>JavaScript, Go, NodeJs, Rest APIs, Doker, Kubernetes</p>
+                    <p>JavaScript, Go, NodeJs, Rest APIs, Doker, Kubernetes</p>  
                 </li>
                 <li class="major">
                     <i class="fa-solid fa-database major__icon"></i>
@@ -89,53 +89,55 @@
             </ul>
         </section>
         <!-- Skills -->
-        <section id="skills">
-            <h2>My Skills</h2>
-            <p>Skill & Attributes</p>
-            <p>내가 가지고 있는 skill들과 장점, 프로그래밍에 관련된 것들</p>
-            <div>
-                <section>
-                    <h3>Coding Skills</h3>
-                    <ul>
-                        <li>
-                            <div><span>HTML</span><span>100%</span></div>
-                            <div><div style="width: 100%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>CSS</span><span>98%</span></div>
-                            <div><div style="width: 98%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Javascript</span><span>99%</span></div>
-                            <div><div style="width: 99%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Vue</span><span>88%</span></div>
-                            <div><div style="width: 88%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>NodeJs</span><span>82%</span></div>
-                            <div><div style="width: 82%;"></div></div>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Npm</li>
-                        <li>Yan</li>
-                        <li>Chrome DevTools</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Etc</h3>
-                    <ul>
-                        <il>Git</il>
-                        <il>Docker</il>
-                        <il>Kubernetes</il>
-                    </ul>
-                </section>
+        <section id="skills" class="section">
+            <div class="max-container">
+                <h2 class="title">My Skills</h2>
+                <p class="description">Skill & Attributes</p>
+                <p>내가 가지고 있는 skill들과 장점, 프로그래밍에 관련된 것들</p>
+                <div class="skills">
+                    <section class="skill__coding">
+                        <h3 class="skills__title">Coding Skills</h3>
+                        <ul>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>HTML</span><span>100%</span></div>
+                                <div class="bar__bg"><div class="bar_value" style="width: 100%;"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>CSS</span><span>98%</span></div>
+                                <div class="bar__bg"><div class="bar_value" style="width: 98%;"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>Javascript</span><span>99%</span></div>
+                                <div class="bar__bg"><div class="bar_value" style="width: 99%;"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>Vue</span><span>88%</span></div>
+                                <div class="bar__bg"><div class="bar_value" style="width: 88%;"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>NodeJs</span><span>82%</span></div>
+                                <div class="bar__bg"><div class="bar_value" style="width: 82%;"></div></div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skill__tools">
+                        <h3 class="skills__title">Tools</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Npm</li>
+                            <li>Yan</li>
+                            <li>Chrome DevTools</li>
+                        </ul>
+                    </section>
+                    <section class="skill__etc">
+                        <h3 class="skills__title">Etc</h3>
+                        <ul>
+                            <il>Git</il>
+                            <il>Docker</il>
+                            <il>Kubernetes</il>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
         <!-- Work -->
