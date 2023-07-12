@@ -348,10 +348,12 @@ font-size: 0.8rem;
     position: relative;
     border-radius: 8px;
     /* 이미지 튀어나오는 부분 안보이게 */
+    /* 이미지 아래가 둥그렇게 되지 않는 이유는 밑에 text때문이야 */
     overflow: hidden;
   }
 
   .project__img {
+    /* gird로 맞춰놓은 부모요소 project의 크기에 맞게 맞추기 */
     width: 100%;
   }
 
