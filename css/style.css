@@ -287,107 +287,180 @@ font-size: 0.8rem;
 /* Work */
 
 #work {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-  }
-  
-  .categories {
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem;
-    gap: 1rem;
-  }
-  
-  .category {
-    position: relative;
-    color: var(--color-text);
-    font-size: 1.1rem;
-    padding: 0.5rem 3rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-accent);
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  
-  .category--selected {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-  }
-  
-  .category__count {
-    opacity: 0;
-    position: absolute;
-    top: -20px;
-    right: 16px;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 100%;
-    background-color: var(--color-accent-variant);
-    color: var(--color-text);
-    transition: all 200ms ease-in;
-  }
-  
-  .category--selected .category__count,
-  .category:hover .category__count {
-    opacity: 1;
-    top: 0;
-  }
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
 
-  /* ----------------------------------------- */
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+  gap: 1rem;
+}
 
+.category {
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  padding: 0.5rem 3rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+  white-space: nowrap;
+}
 
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-  }
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
 
-  .project {
-    position: relative;
-    border-radius: 8px;
-    /* 이미지 튀어나오는 부분 안보이게 */
-    /* 이미지 아래가 둥그렇게 되지 않는 이유는 밑에 text때문이야 */
-    overflow: hidden;
-  }
+.category__count {
+  opacity: 0;
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  background-color: var(--color-accent-variant);
+  color: var(--color-text);
+  transition: all 200ms ease-in;
+}
 
-  .project__img {
-    /* gird로 맞춰놓은 부모요소 project의 크기에 맞게 맞추기 */
-    width: 100%;
-  }
+.category--selected .category__count,
+.category:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
 
-  .project__metadata {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 250ms ease-in;
-    transform: translateY(-10px);
-  }
+/* ----------------------------------------- */
 
 
-  .project__metadata:hover {
-    opacity: 0.8;
-    transform: translateY(0px);
-  }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
 
-  .project__title:after{
-    content: '';
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0.5rem 0;
-    width: 50px;
-    height: 2px;
-    background-color: var(--color-accent);
-        
-  }
+.project {
+  position: relative;
+  border-radius: 8px;
+  /* 이미지 튀어나오는 부분 안보이게 */
+  /* 이미지 아래가 둥그렇게 되지 않는 이유는 밑에 text때문이야 */
+  overflow: hidden;
+}
+
+.project__img {
+  /* gird로 맞춰놓은 부모요소 project의 크기에 맞게 맞추기 */
+  width: 100%;
+}
+
+.project__metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 250ms ease-in;
+  transform: translateY(-10px);
+}
+
+
+.project__metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__title:after{
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
+      
+}
+
+
+/* Testimonials */
+
+.testimonials {
+  margin: 3rem;
+}
+
+.testimonial {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.testimonial:nth-child(even) .testimonial__img{
+  order: 1;
+}
+
+.testimonial__img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble{
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name{
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
+}
+
+/* Aside */
+.arrow-up{
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+
+/* Footer */
+#contact{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.contact__links{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link{
+  transition: color 250ms ease-in;
+}
+
+.contact__link:hover{
+  color: var(--color-accent);
+}

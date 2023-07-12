@@ -236,6 +236,7 @@
             </div>
         </section>
         <!-- Testimonials -->
+        <!-- 배경색없으니까 max-container -->
         <section id="testimonial" class="section max-container">
             <h2 class="title">Testimonials</h2>
             <p class="description">See what they say about me</p>
@@ -244,57 +245,61 @@
                     <img src="./imgs/testimonial/people1.jpg" alt="people1" class="testimonial__img">
                     <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas totam nobis sapiente a ipsa, nulla esse est consectetur ipsam suscipit natus adipisci laboriosam! Culpa totam doloribus excepturi harum officiis!</p>
-                        <p><a href="#">Samsung</a> /Samsung</p>
+                        <p><a href="#" class="testimonial__bubble__name">Samsung</a> /Samsung</p>
                     </div>
                 </li>
                 <li class="testimonial">
-                    <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img"/>
+                    <img src="./imgs/testimonial/people2.webp" alt="people2" class="testimonial__img"/>
                     <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas totam nobis sapiente a ipsa, nulla esse est consectetur ipsam suscipit natus adipisci laboriosam! Culpa totam doloribus excepturi harum officiis!</p>
-                        <p><a href="#">Anna Jin</a> /Google</p>
+                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Google</p>
                     </div>
                   </li>
                   <li class="testimonial">
-                    <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img"/>
+                    <img src="./imgs/testimonial/people3.webp" alt="people3" class="testimonial__img"/>
                     <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas totam nobis sapiente a ipsa, nulla esse est consectetur ipsam suscipit natus adipisci laboriosam! Culpa totam doloribus excepturi harum officiis!</p>
-                        <p><a href="#">Anna Jin</a> /Samsung</p>
+                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
                     </div>
                   </li>
             </ul>
         </section>
         <!-- Arrow up -->
         <aside>
-            <a href="#home" title="back to top">
+            <a  class="arrow-up" href="#home" title="back to top">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
     </main>
     <!-- footer -->
-    <footer id="contact">
-        <h2>Let&#39;s talk</h2>
-        <p>jishuya3015@gmail.com</p>
-        <ul>
-            <li>
-                <a 
-                    href="https://github.com/jishuya" 
-                    target="_blank"
-                    title="my github link"
-                >
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a 
-                    href="#" 
-                    target="_blank"
-                    title="my linkedin link"
-                >
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-        </ul>
-        <p>ⓒJishu - All rights reserved</p>
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">Let&#39;s talk</h2>
+            <p class="description">jishuya3015@gmail.com</p>
+            <ul class="contact__links">
+                <li>
+                    <a
+                        class="contact__link" 
+                        href="https://github.com/jishuya" 
+                        target="_blank"
+                        title="my github link"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        class="contact__link"
+                        href="#" 
+                        target="_blank"
+                        title="my linkedin link"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>ⓒJishu - All rights reserved</p>
+        </div>
     </footer>
 </body>
 </html>
