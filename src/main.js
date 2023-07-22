@@ -18,3 +18,23 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', ()=>{
     home.style.opacity = 1 - window.scrollY / homeHeight;
 })
+
+
+// Arrow up버튼을 아래로 스크롤시 투명하게 처리함
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
+});
+
+
+// Navbar 토글버튼 클릭 처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  // toggle은 기존에 없으면 추가하고 있으면 제거
+  navbarMenu.classList.toggle('open');
+});

@@ -47,7 +47,7 @@ button {
 }
   
 button:focus {
-    outline: 1px solid var(--color-accent);
+    outline: 1px solid transparent;
 }
 
 /* Common */
@@ -103,13 +103,22 @@ button:focus {
     height: 36px;
 }
 
-.header__logo__title {
+.header__logo__title{
   font-size: 1.8rem;
 }
  
 .header__menu{
     display: flex;
     gap: 4px
+}
+
+.header__toggle{
+  display: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
 }
 
 .header__menu__item {
@@ -400,7 +409,6 @@ font-size: 0.8rem;
 
 
 /* Testimonials */
-
 .testimonials {
   margin: 3rem;
 }
@@ -437,6 +445,7 @@ font-size: 0.8rem;
 
 /* Aside */
 .arrow-up{
+  opacity: 0;
   background-color: var(--color-primary);
   position: fixed;
   bottom: 3rem;
@@ -447,6 +456,7 @@ font-size: 0.8rem;
   text-align: center;
   border-radius: 100%;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
@@ -484,7 +494,31 @@ font-size: 0.8rem;
   .description{
     font-size: 1rem;
   }
+  .header {
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-primary);
+  }
 
+  .header__menu{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__toggle{
+    display: block;
+  }
+
+  .header__menu.open {
+    display: flex;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
 
   #home{
     padding-bottom: 3rem;
