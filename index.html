@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- javascript, css -->
     <script src="src/main.js" defer></script>
+    <!-- <script type="module" src="src/main.js" defer></script> 
+    <script type="module" src="src/projects.js" defer></script> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -153,20 +155,20 @@
                 <p class="description">Projects</p>
                 <ul class="categories">
                     <li>
-                        <button class="category category__selected">All <span class="category__count">4</span></button>
+                        <button class="category category__selected" data-category="all">All <span class="category__count">4</span></button>
                     </li>
                     <li>
-                        <button class="category">Front-end <span class="category__count">3</span></button>
+                        <button class="category" data-category="front-end">Front-end <span class="category__count">4</span></button>
                     </li>
                     <li>
-                        <button class="category">Back-end <span class="category__count">2</span></button>
+                        <button class="category" data-category="back-end">Back-end <span class="category__count">3</span></button>
                     </li>
                     <li>
-                        <button class="category">Mobile <span class="category__count">0</span></button>
+                        <button class="category" data-category="mobile">Mobile <span class="category__count">0</span></button>
                     </li>
                 </ul>
                 <ul class="projects">
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tas.png" alt="tas" class="project__img" >
                             <div class="project__metadata">
@@ -175,7 +177,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tms2.png" alt="tms2" class="project__img">
                             <div class="project__metadata">
@@ -184,7 +186,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tms3.png" alt="tms3" class="project__img">
                             <div class="project__metadata">
@@ -193,7 +195,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/personal.png" alt="routine checker" class="project__img">
                             <div class="project__metadata">
@@ -202,7 +204,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="back-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tas.png" alt="tas" class="project__img" >
                             <div class="project__metadata">
@@ -211,7 +213,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="back-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tms2.png" alt="tms2" class="project__img">
                             <div class="project__metadata">
@@ -220,7 +222,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="back-end">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/tms3.png" alt="tms3" class="project__img">
                             <div class="project__metadata">
@@ -229,7 +231,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project"  data-type="mobile">
                         <a href="#" target="_blank">
                             <img src="./imgs/projects/personal.png" alt="routine checker" class="project__img">
                             <div class="project__metadata">
