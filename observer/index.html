@@ -46,16 +46,24 @@
     <div class="box">20</div>
 
     <script>
-      const observer = new IntersectionObserver(callback);
+      const options = {
+        rootMargin: '-400px',
+        threshold: [0, 0.25, 0.5],
+      };
+      const observer = new IntersectionObserver(callback, options);
       const boxes = document.querySelectorAll('.box');
-      boxes.forEach((box)=> observer.observ(box));
-      function callback(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('.active');
-        } else {
-          entry.target.classList.remove('active');
-        }
-        console.log(entry.target)
+      boxes.forEach((box)=> observer.observe(box));
+      function callback(entries){
+        entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('active');
+          } else {
+            entry.target.classList.remove('active');
+          }
+          console.log(entry.target)
+          console.log(entry.isIntersecting)
+          console.log(entry.intersectionRatio);
+          });
       }
     </script>
   </body>
