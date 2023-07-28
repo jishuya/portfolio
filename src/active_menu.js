@@ -10,7 +10,8 @@
 
 const sectionIds = [ '#home', '#about', '#skills', '#work', '#testimonials', '#contact' ]; 
 const section = sectionIds.map((id) => document.querySelector(id));
-// console.log(section)
+// 보여지는 섹션
+const visibleSections = sectionIds.map(()=> false)
 
 const navItems = sectionIds.map((id)=> document.querySelector(`[href="${id}"]`));
 // console.log(navItems)
@@ -20,9 +21,20 @@ const observer = new IntersectionObserver(observerCallback, options);
 section.forEach((section)=> observer.observe(section));
 
 function observerCallback(entries){
+    let selectLastOne;
     entries.forEach((entry)=>{
-        console.log(entry.target);
-        console.log(entry.isIntersecting);
-        console.log(entry.isIntersectionRatio);
-    })
+        // console.log(entry.target);
+        // console.log(entry.isIntersecting);
+        // console.log(entry.isIntersectionRatio);
+        console.log('entry.target.id: ', entry.target.id)
+        const index = sectionIds.indexOf(`#${entry.target.id}`);
+        visibleSections[index] = entry.intersecting;
+        selectLastOne = 
+            index === sectionIds.length - 1 &&
+            entry.intersecting &&
+            entry.intersectionRatio >= 0.99;
+    });
+    console.log('visibleSections: ', visibleSections);
+    console.log('selectLastOne: ', selectLastOne);
 }
+
