@@ -142,6 +142,7 @@ border-radius: 4px;
 
 /* home */
 #home{
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
     text-align: center;
@@ -180,6 +181,27 @@ border-radius: 4px;
     outline: 1px solid var(--color-accent);
     background-color: transparent;
     color: var(--color-text);
+}
+
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* About */
@@ -242,6 +264,7 @@ font-size: 0.8rem;
 #skills {
   background-color: var(--color-primary-variant);
   color: var(--color-text);
+  position: relative;
 }
 
 /* section : 전체에 배경색이 적용되도록, 안에 컨텐츠:  .max-container로 크기 제한해야해 */
@@ -303,6 +326,27 @@ font-size: 0.8rem;
 .bar_value{
     background-color: var(--color-accent);
     height: 3px;
+}
+
+.skill__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.skill__divider svg {
+  position: relative;
+  display: block;
+  width: calc(102% + 1.3px);
+  height: 82px;
+}
+
+.skill__divider .shape-fill {
+  fill: var(--color-primary);
 }
 
 /* Work */
@@ -473,6 +517,7 @@ font-size: 0.8rem;
 
 /* Footer */
 #contact{
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
 }
@@ -491,6 +536,26 @@ font-size: 0.8rem;
 
 .contact__link:hover{
   color: var(--color-accent);
+}
+
+.footer__divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer__divider svg {
+  position: relative;
+  display: block;
+  width: calc(102% + 1.3px);
+  height: 82px;
+}
+
+.footer__divider .shape-fill {
+  fill: #FFFFFF;
 }
 
 /* 0 ~ 768px까지는 스타일 재정의 */
