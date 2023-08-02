@@ -1,0 +1,9 @@
+/* 가상 요소 스타일 */
+.custom-label {
+position: relative;
+font-size: 24px;
+}
+
+.custom-label::after {
+content: ' 🖐'; /* 이모지를 이용하여 라벨 추가 */
+}
