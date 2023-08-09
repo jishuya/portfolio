@@ -19,10 +19,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Type -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- javascript, css -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,7 +56,7 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avatar" src="./imgs/profile_removebg.png" alt="jishu's profile" />
-                <h2 class="home__title">Hello <br>I&#39;m <strong class="home__title--strong">Web Developer</strong> Jisoo<br> who grows every day.</h2>
+                <h2 class="home__title" aria-label="Hello, I'm Web Developer Jisoo">Hello <br>I&#39;m <strong class="home__title--strong">Web Developer</strong> Jisoo<br> who grows every day.</h2>
                 <p class="home__description">I want to make a positive impact on the world through IT skills.</p>
                 <a class="home__contact"href="#contact">Contact me</a>
             </div>
